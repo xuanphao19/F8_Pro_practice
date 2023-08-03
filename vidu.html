@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box" data-animation="alternate" style="--bgc: purple">I will play/pause</div>
+
+    <div class="container flipped">
+      <div class="list">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 6</div>
+      </div>
+    </div>
+
+    <div class="box2" data-animation="alternate" style="--bgc: purple">I will 11111111</div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 84.5%;
+        margin-top: 100px;
+        margin-inline: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        overflow-x: scroll;
+        position: relative;
+        z-index: 99;
+        background: #8a2be26e;
+      }
+      .box2 {
+        background: #000;
+        padding: 20px;
+        color: #fff;
+      }
+      .list {
+        display: flex;
+        gap: 30px;
+        /* padding-inline: 30px; */
+        /* overflow-x: clip; */
+        flex-wrap: wrap;
+      }
+      /* .flipped,
+      .flipped .list {
+        transform: rotateX(180deg);
+      } */
+
+      .container::-webkit-scrollbar {
+        width: 20px;
+        height: 20px;
+        background: #75050591;
+        /* background: transparent; */
+      }
+      .container::-webkit-scrollbar-track {
+        background: rgb(9, 131, 17);
+        /* background: transparent; */
+        border-radius: 50px;
+      }
+      .container::-webkit-scrollbar-thumb {
+        background: black;
+        /* background: transparent; */
+        border-radius: 50px;
+        transition: all 0.5s ease;
+      }
+      .container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .item {
+        /* flex-shrink: 0; */
+        width: calc((100% - 60px) / 3);
+        height: 100px;
+        line-height: 100px;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        /* flex: 1 0 auto; */
+      }
+
+      .item:hover {
+        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </body>
+</html>
