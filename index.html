@@ -1704,8 +1704,8 @@
     </a> -->
 
     <!-- Vendor JS Files -->
-    <!-- <div id="preloader"></div>
-    <script src="assets/vendor/aos/aos.js"></script>
+    <div id="preloader"></div>
+    <!--  <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/jQuery_v3.6.4.js"></script>-->
     <script src="assets/vendor/responsivevoice.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -1715,16 +1715,26 @@
     <!-- <script src="assets/js/main.js"></script> -->
     <!-- Khi mặt trời trên đỉnh núi kiêu hãnh reo vang -->
     <script>
-      document.addEventListener(
-        "click",
-        function () {
-          responsiveVoice.speak("Chào mừng bạn đến với F8, fullstack chấm edu chấm vn", "Vietnamese Female");
-        },
-        {once: true},
-      );
-      const glightbox = GLightbox({
-        selector: ".glightbox",
-      });
+      (function () {
+        ("use strict");
+        document.addEventListener(
+          "click",
+          function () {
+            responsiveVoice.speak("Chào mừng bạn đến với F8, fullstack chấm edu chấm vn", "Vietnamese Female");
+          },
+          {once: true},
+        );
+        const preloader = ((sle) => {
+          if (document.querySelector(sle)) {
+            window.addEventListener("load", () => {
+              document.querySelector(sle).remove();
+            });
+          }
+        })("#preloader");
+        const glightbox = GLightbox({
+          selector: ".glightbox",
+        });
+      })();
     </script>
   </body>
 </html>

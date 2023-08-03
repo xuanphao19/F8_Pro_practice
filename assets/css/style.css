@@ -255,6 +255,40 @@ section {
 }
 /* The end General ! */
 
+/*- Preloader */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999999;
+  overflow: hidden;
+  background: var(--bs-white);
+}
+
+#preloader:before {
+  --w: 100px;
+  --h: 100px;
+  content: "";
+  position: fixed;
+  top: calc(50% - (var(--w) / 2));
+  left: calc(50% - (var(--h) / 2));
+  border: 10px solid var(--bs-span-1);
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: var(--w);
+  height: var(--h);
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
