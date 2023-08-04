@@ -12,7 +12,9 @@
     <meta
       property="og:description"
       content="XuanPhao English là website tặng Pháo yêu của bố. Chúc con ngoan, học giỏi, vững vàng trên đôi chân của mình! Tình yêu nghẹn ngào trong chờ đợi ngọt ngào!" />
-    <meta name="description" content="XuanPhao Web - Học lập trình để đi làm!" />
+    <meta
+      name="description"
+      content="XuanPhao Web - Học lập trình để đi làm! Khi mặt trời trên đỉnh núi kiêu hãnh reo vang!" />
     <meta name="keywords" content="XuanPhao, html, css pro, Javascript, ReactJS, NextJS" />
     <meta
       property="og:image"
@@ -25,7 +27,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/flexBox.css" rel="stylesheet" />
-    <!-- <link href="assets/css/main.css" rel="stylesheet" /> -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- <link href="assets/css/style.min.css" rel="stylesheet" /> -->
     <!-- <link href="assets/css/Responsive.css" rel="stylesheet" /> -->
@@ -1694,32 +1695,19 @@
         </div>
       </div>
     </div>
-
     <!-- End Footer -->
-
-    <!-- <a href="#" class="back-to-top d-f-center">
-      <span class="d-f-center">
-        <img loading="lazy" src="./assets/img/clients/toTop.svg" alt="" />
-      </span>
-    </a> -->
 
     <!-- Vendor JS Files -->
     <div id="preloader"></div>
-    <!--  <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/jQuery_v3.6.4.js"></script>-->
+    <a href="#" class="back-to-top btn">Top</a>
     <script src="assets/vendor/responsivevoice.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <!--   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script async src="https://cse.google.com/cse.js?cx=040d0df0e4a2f46b2"></script> -->
-    <!-- Template Main JS File -->
-    <!-- <script src="assets/js/main.js"></script> -->
-    <!-- Khi mặt trời trên đỉnh núi kiêu hãnh reo vang -->
     <script>
       (function () {
         ("use strict");
         document.addEventListener(
           "click",
-          function () {
+          () => {
             responsiveVoice.speak("Chào mừng bạn đến với F8, fullstack chấm edu chấm vn", "Vietnamese Female");
           },
           {once: true},
@@ -1734,6 +1722,17 @@
         const glightbox = GLightbox({
           selector: ".glightbox",
         });
+        const onscroll = (el, listener) => {
+          el.addEventListener("scroll", listener);
+        };
+        const backtotop = ((sle) => {
+          const el = document.querySelector(sle);
+          if (el) {
+            onscroll(document, () =>
+              window.scrollY > 100 ? el.classList.add("active") : el.classList.remove("active"),
+            );
+          }
+        })(".back-to-top");
       })();
     </script>
   </body>
