@@ -1712,11 +1712,11 @@
       (function () {
         ("use strict");
         let clicked = 0;
-        const clickToSpeak = ((clicked) => {
+        const clickToSpeak = ((c) => {
           document.onclick = () => {
-            if (Date.now() - clicked > 8000) {
+            if (Date.now() - c > 8000) {
               responsiveVoice.speak("Chào mừng bạn đến với F8, fullstack chấm edu chấm vn", "Vietnamese Female");
-              clicked = Date.now();
+              c = Date.now();
             }
           };
         })(clicked);
