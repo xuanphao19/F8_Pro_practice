@@ -2,96 +2,393 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <div class="box" data-animation="alternate" style="--bgc: purple">I will play/pause</div>
+    <main style="height: 100px">
+      <!-- Header -->
+      <header class="header">
+        <div class="content">
+          <nav class="navbar">
+            <!-- Logo -->
+            <img src="./assets/img/logo.svg" alt="Besnik." />
+            <!-- Navigation -->
+            <ul>
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">Features</a></li>
+              <li><a href="#!">Services</a></li>
+              <li><a href="#!">Resources</a></li>
+              <li><a href="#!">Contact</a></li>
+            </ul>
 
-    <div class="container flipped">
-      <div class="list">
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-        <div class="item">Item 4</div>
-        <div class="item">Item 5</div>
-        <div class="item">Item 6</div>
-        <div class="item">Item 6</div>
+            <!-- Action -->
+            <div class="actions">
+              <a href="#!" class="action-link">Sign in</a>
+              <a href="#!" class="btn action-btn">Sign up</a>
+            </div>
+          </nav>
+
+          <!-- Hero -->
+          <div class="hero">
+            <div class="info">
+              <p class="sub-title">Welcome to Besnik Agency</p>
+              <h1 class="title">Discover a place you'll love to live.</h1>
+              <p class="desc">
+                Get the best real estate deals first, before they hit the mass market! HOT FORECLOSURE DEALS with one
+                simple search.
+              </p>
+              <!-- Call to action -->
+              <a href="" class="btn hero-cta">More About Us</a>
+            </div>
+
+            <img src="./assets/img/hero.svg" alt="Discover a place you'll love to live." class="hero-img" />
+          </div>
+        </div>
+      </header>
+
+      <!-- Clients -->
+      <div class="clients">
+        <div class="content">
+          <div class="row">
+            <!-- Logo -->
+            <img src="./assets/img/logo.svg" alt="Besnik." />
+
+            <!-- Stars -->
+            <div class="stars">
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
+            </div>
+          </div>
+          <div class="row row-desc">
+            <p class="desc">More than 45,000+ companies trust besnik</p>
+            <p class="desc">5 Star Ratings (2k+ Review)</p>
+          </div>
+          <div class="images">
+            <img src="./assets/img/meundies.svg" alt="Meundies" />
+            <img src="./assets/img/slack.svg" alt="Slack" />
+            <img src="./assets/img/amazon.svg" alt="Amazon" />
+            <img src="./assets/img/woocommerce.svg" alt="Woocommerce" />
+            <img src="./assets/img/sitepoint.svg" alt="Sitepoint" />
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="box2" data-animation="alternate" style="--bgc: purple">I will 11111111</div>
+      <!-- Guides -->
+      <div class="guides">
+        <div class="content">
+          <h2 class="sub-title">How its works?</h2>
+          <p class="desc">Everything you need to know when you're looking to buy, rent, or sell - all in one place.</p>
+
+          <!-- List guide -->
+          <ul class="list-guide">
+            <li class="guide-item">
+              <img src="./assets/img/icon.svg" alt="Buyer Guides" class="icon" />
+              <h3 class="title">Buyer Guides</h3>
+              <a href="#!" class="link">
+                <span>How to buy</span>
+                <img src="./assets/img/arrow-right.svg" alt="Arrow right" class="arrow" />
+              </a>
+            </li>
+            <li class="guide-item">
+              <img src="./assets/img/icon-1.svg" alt="Renter Guides" class="icon" />
+              <h3 class="title">Renter Guides</h3>
+              <a href="#!" class="link">
+                <span>How to rent</span>
+                <img src="./assets/img/arrow-right.svg" alt="Arrow right" class="arrow" />
+              </a>
+            </li>
+            <li class="guide-item">
+              <img src="./assets/img/icon-2.svg" alt="Seller Guides" class="icon" />
+              <h3 class="title">Seller Guides</h3>
+              <a href="#!" class="link">
+                <span>How to sell</span>
+                <img src="./assets/img/arrow-right.svg" alt="Arrow right" class="arrow" />
+              </a>
+            </li>
+          </ul>
+
+          <div class="guide-cta">
+            <a href="#!" class="btn">Sell Full Guidelines</a>
+          </div>
+        </div>
+      </div>
+      <!-- Featured -->
+      <div class="featured">
+        <div class="content">
+          <header>
+            <h2 class="title-featured">Featured Properties</h2>
+            <div class="row">
+              <p class="desc">Everything you need to know when you're looking</p>
+              <a href="#!" class="link">
+                <span>View All Properties</span>
+                <img src="./assets/img/arrow-right.svg" alt="Arrow right" class="arrow" />
+              </a>
+            </div>
+          </header>
+        </div>
+      </div>
+    </main>
 
     <style>
       * {
-        margin: 0;
-        padding: 0;
         box-sizing: border-box;
       }
 
-      .container {
-        width: 84.5%;
-        margin-top: 100px;
-        margin-inline: auto;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        overflow-x: scroll;
-        position: relative;
-        z-index: 99;
-        background: #8a2be26e;
+      :root {
+        --primary-color: #0f1b4c;
       }
-      .box2 {
-        background: #000;
-        padding: 20px;
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-size: 1.6rem;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Common */
+      a {
+        text-decoration: none;
+      }
+
+      .content {
+        width: 1110px;
+        max-width: calc(100% - 48px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .btn {
+        display: inline-block;
+        min-width: 98px;
+        padding: 18px 16px;
+        border-radius: 12px;
+        background: var(--primary-color);
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
         color: #fff;
       }
-      .list {
+
+      .btn:hover {
+        opacity: 0.9;
+      }
+
+      /* ============== Header ============== */
+      .header {
+        position: relative;
+        background-color: #e6f0ff;
+        height: 100vh;
+      }
+      .navbar {
         display: flex;
-        gap: 30px;
-        /* padding-inline: 30px; */
-        /* overflow-x: clip; */
-        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 38px;
       }
-      /* .flipped,
-      .flipped .list {
-        transform: rotateX(180deg);
-      } */
 
-      .container::-webkit-scrollbar {
-        width: 20px;
-        height: 20px;
-        background: #75050591;
-        /* background: transparent; */
+      .navbar ul {
+        display: flex;
+        margin-left: 50px;
       }
-      .container::-webkit-scrollbar-track {
-        background: rgb(9, 131, 17);
-        /* background: transparent; */
-        border-radius: 50px;
+
+      .navbar .actions {
+        margin-left: auto;
       }
-      .container::-webkit-scrollbar-thumb {
-        background: black;
-        /* background: transparent; */
-        border-radius: 50px;
-        transition: all 0.5s ease;
+
+      .navbar ul a {
+        font-weight: 500px;
+        font-size: 1.4rem;
+        color: #4f5361;
+        padding: 8px 14px;
       }
-      .container::-webkit-scrollbar-thumb:hover {
-        background: #555;
+
+      .navbar ul a:hover {
+        text-decoration: underline;
       }
-      .item {
-        /* flex-shrink: 0; */
-        width: calc((100% - 60px) / 3);
-        height: 100px;
-        line-height: 100px;
-        background-color: orange;
-        color: white;
+
+      .navbar .action-link {
+        font-family: Poppins;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--primary-color);
+      }
+
+      .navbar .action-btn {
+        padding: 13px 16px;
+        margin-left: 18px;
+        border-radius: 8px;
+      }
+
+      .hero {
+        margin-top: 130px;
+      }
+
+      .hero .info {
+        width: 51%;
+      }
+
+      .hero .sub-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.01em;
+      }
+
+      .hero .title {
+        margin-top: 8px;
+        font-size: 6.2rem;
+        font-weight: 700;
+        line-height: 1.19;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .hero .desc {
+        margin-top: 30px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.78;
+        color: #5a6473;
+      }
+
+      .hero-cta {
+        margin-top: 40px;
+        min-width: 170px;
+      }
+
+      .hero-img {
+        position: absolute;
+        right: calc((100vw - 1110px) / 2 - 100px);
+        bottom: 0;
+      }
+
+      /* ============== Clients ============== */
+      .clients {
+        margin-top: 122px;
+      }
+
+      .clients .row {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .clients .desc {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.25;
+        color: #7d8589;
+      }
+
+      .clients .row-desc {
+        margin-top: 23px;
+      }
+
+      .clients .images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 96px;
+      }
+
+      /* ============== Guides ============== */
+      .guides {
+        margin-top: 200px;
+      }
+
+      .guides .sub-title {
+        position: relative;
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 1;
         text-align: center;
-        overflow: hidden;
-        /* flex: 1 0 auto; */
+        color: #000339;
       }
 
-      .item:hover {
-        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.5);
+      .guides .sub-title::before {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        display: inline-block;
+        width: 41px;
+        height: 4px;
+        border-radius: 12px;
+        background: #000339;
+      }
+
+      .guides .desc {
+        width: 459px;
+        max-width: 100%;
+        margin: 20px auto 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.88;
+        text-align: center;
+        color: #5a6473;
+      }
+
+      .list-guide {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+      }
+
+      .guide-item {
+        margin: 0 70px;
+        text-align: center;
+      }
+
+      .guide-item .title {
+        margin-top: 26px;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.1;
+        text-align: center;
+        color: #3b3c45;
+      }
+
+      .guide-item .link {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #0689ff;
+      }
+
+      .guide-item .arrow {
+        margin-left: 6px;
+      }
+
+      .guide-cta {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .guide-item .btn {
+        min-width: 170px;
+      }
+
+      /* ============== Featured ============== */
+      .featured {
+        margin-top: 230px;
+      }
+
+      .featured .title-featured {
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 1;
+        color: #000339;
+      }
+
+      .featured .row {
+        display: flex;
       }
     </style>
   </body>
