@@ -2424,6 +2424,7 @@ a.view_all.btn svg {
   margin-top: 3rem;
 }
 .testmonials .wrap_review:has(#leftArrow:checked) {
+  --overflow: visible;
   animation: slider_left 50s linear infinite;
 }
 .testmonials .wrap_review:has(#rightArrow:checked) {
