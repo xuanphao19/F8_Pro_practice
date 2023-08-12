@@ -27,8 +27,8 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/flexBox.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- <link href="assets/css/style.min.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet" /> -->
+    <link href="assets/css/style.min.css" rel="stylesheet" />
     <!-- <link href="assets/css/Responsive.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <!-- Trong dự án có sự dụng
@@ -82,52 +82,13 @@
           </div>
         </div>
         <div class="btn rectangle text_clip flex-center hoverBtn" style="--content: 'Login'">Login</div>
-
-        <div class="desktop-none">
-          <label for="openMenu" class="btn menuBtn">
-            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="9" height="1" fill="#C4C4C4" />
-              <rect y="4" width="9" height="1" fill="#C4C4C4" />
-              <rect y="8" width="9" height="1" fill="#C4C4C4" />
-            </svg>
-          </label>
+        <div class="btn menuBtn desktop-none">
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="9" height="1" fill="#C4C4C4" />
+            <rect y="4" width="9" height="1" fill="#C4C4C4" />
+            <rect y="8" width="9" height="1" fill="#C4C4C4" />
+          </svg>
         </div>
-      </div>
-    </div>
-
-    <input type="radio" name="toggleOpenClose" id="openMenu" />
-    <input type="radio" name="toggleOpenClose" checked id="closeMenu" />
-
-    <div class="wrapMobileMenu">
-      <div class="mobileMenu">
-        <label for="closeMenu">
-          <span class="btn closeMobileMenu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </span>
-        </label>
-
-        <ul class="list">
-          <li class="item closeMobileMenu">
-            <a href="#" class="item_link">Home</a>
-          </li>
-          <li class="item closeMobileMenu">
-            <a href="#products" class="item_link">Products</a>
-          </li>
-          <li class="item closeMobileMenu">
-            <a href="#skills" class="item_link">Guidlines</a>
-          </li>
-          <li class="item closeMobileMenu">
-            <a href="#review" class="item_link">Review</a>
-          </li>
-        </ul>
       </div>
     </div>
 
@@ -1219,26 +1180,11 @@
           <div class="review_header desktop-none">
             <h2 class="section_title quests_title"><span class="text_clip strong">Test</span>monials</h2>
           </div>
-
-          <div class="wrapControl flex items-center">
-            <a href="#slides_1" class="dots"></a>
-            <a href="#slides_2" class="dots"></a>
-            <a href="#slides_3" class="dots"></a>
-            <a href="#slides_4" class="dots"></a>
-            <a href="#slides_5" class="dots"></a>
-            <a href="#slides_6" class="dots"></a>
-            <a href="#slides_7" class="dots"></a>
-            <a href="#slides_8" class="dots"></a>
-          </div>
-
           <div class="wrap_review flex gap-16 flex-nowrap">
             <input type="radio" name="Arrow" id="leftArrow" hidden />
             <input type="radio" name="Arrow" id="rightArrow" hidden />
 
-            <div
-              id="slides_1"
-              class="base base_review flex-1-0-a"
-              style="--filter-color: var(--primary-color-dark-orange)">
+            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-dark-orange)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon icon_quote">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1284,7 +1230,7 @@
               </div>
             </div>
 
-            <div id="slides_2" class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
+            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1328,10 +1274,7 @@
               </div>
             </div>
 
-            <div
-              id="slides_3"
-              class="base active base_review flex-1-0-a"
-              style="--filter-color: var(--primary-color-yellow)">
+            <div class="base active base_review flex-1-0-a" style="--filter-color: var(--primary-color-yellow)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1377,10 +1320,7 @@
               </div>
             </div>
 
-            <div
-              id="slides_4"
-              class="base base_review flex-1-0-a"
-              style="--filter-color: var(--primary-color-dark-orange)">
+            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-dark-orange)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon icon_quote">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1426,10 +1366,7 @@
               </div>
             </div>
 
-            <div
-              id="slides_5"
-              class="base active base_review flex-1-0-a"
-              style="--filter-color: var(--primary-color-green)">
+            <div class="base active base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1473,7 +1410,7 @@
               </div>
             </div>
 
-            <div id="slides_6" class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
+            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1517,10 +1454,7 @@
               </div>
             </div>
 
-            <div
-              id="slides_7"
-              class="base active base_review flex-1-0-a"
-              style="--filter-color: var(--primary-color-green)">
+            <div class="base active base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1564,7 +1498,7 @@
               </div>
             </div>
 
-            <div id="slides_8" class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
+            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
               <div class="item flex flex-col items-center justify-content-start gap-6">
                 <span class="icon">
                   <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
@@ -1643,6 +1577,8 @@
               </svg>
             </label>
           </div>
+
+          <div class="dots_dots_dots desktop-none"></div>
         </div>
       </section>
     </main>
@@ -1677,14 +1613,12 @@
                 </span>
               </div>
 
-              <div>
-                <span class="btn menuBtn desktop-none">
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="9" height="1" fill="#C4C4C4"></rect>
-                    <rect y="4" width="9" height="1" fill="#C4C4C4"></rect>
-                    <rect y="8" width="9" height="1" fill="#C4C4C4"></rect>
-                  </svg>
-                </span>
+              <div class="btn menuBtn desktop-none">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="9" height="1" fill="#C4C4C4"></rect>
+                  <rect y="4" width="9" height="1" fill="#C4C4C4"></rect>
+                  <rect y="8" width="9" height="1" fill="#C4C4C4"></rect>
+                </svg>
               </div>
             </div>
             <div class="started flex items-center gap-36">
@@ -1786,14 +1720,14 @@
       (function () {
         ("use strict");
         let clicked = 0;
-        // const clickToSpeak = ((c) => {
-        //   document.onclick = () => {
-        //     if (Date.now() - c > 8000) {
-        //       responsiveVoice.speak("Chào mừng bạn đến với F8, fullstack chấm edu chấm vn", "Vietnamese Female");
-        //       c = Date.now();
-        //     }
-        //   };
-        // })(clicked);
+        const clickToSpeak = ((c) => {
+          document.onclick = () => {
+            if (Date.now() - c > 8000) {
+              responsiveVoice.speak("Chào mừng bạn đến với F8, fullstack chấm edu chấm vn", "Vietnamese Female");
+              c = Date.now();
+            }
+          };
+        })(clicked);
         const preloader = ((sle) => {
           if (document.querySelector(sle)) {
             window.addEventListener("load", () => {
@@ -1815,16 +1749,6 @@
             );
           }
         })(".back-to-top");
-
-        const closeMobileMenu = (() => {
-          const parentEl = document.querySelector(".mobileMenu");
-          parentEl.onclick = (e) => {
-            const closeMenu = document.querySelector("#closeMenu");
-            if (e.target.parentElement.classList.contains("closeMobileMenu")) {
-              closeMenu.checked = true;
-            }
-          };
-        })();
       })();
     </script>
   </body>
