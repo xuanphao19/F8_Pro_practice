@@ -3204,7 +3204,9 @@ a.view_all.btn svg {
   .about .section_content {
     font-size: 0.8rem;
   }
-
+  #review.review {
+    --bs-gutter-y: 0;
+  }
   #review .review_contain .review_header .quests_title {
     max-width: 100%;
     text-align: left;
@@ -3213,6 +3215,7 @@ a.view_all.btn svg {
   .refreshNews.testmonials.container {
     min-height: 55rem;
     width: 96%;
+    margin-top: 0;
     padding-bottom: 2em;
   }
   #skills {
@@ -3259,7 +3262,7 @@ a.view_all.btn svg {
   .refreshNews.testmonials .wrap_review {
     text-align: center;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 3em;
   }
 
   .refreshNews.testmonials .wrap_review .base_review {
@@ -3278,7 +3281,7 @@ a.view_all.btn svg {
     padding-bottom: 30px;
   }
   .wrapControl {
-    bottom: 12px;
+    bottom: 2.6rem;
   }
   .footer .started span {
     font-size: 1.8rem;
@@ -3310,11 +3313,11 @@ a.view_all.btn svg {
     padding-bottom: 0;
   }
   .review_header {
-    margin-top: 4em;
+    margin-top: 6em;
   }
   .leftRightArrow {
     right: 1em;
-    top: 12rem;
+    top: 9.6em;
   }
   .features .section_content::before {
     filter: blur(32px);
