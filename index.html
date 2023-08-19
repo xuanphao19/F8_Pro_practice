@@ -27,14 +27,16 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/flexBox.css" rel="stylesheet" />
-    <!-- <link href="assets/css/style.css" rel="stylesheet" /> -->
-    <link href="assets/css/style.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- <link href="assets/css/style.min.css" rel="stylesheet" /> -->
     <!-- <link href="assets/css/Responsive.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <!-- Trong dự án có sự dụng
     Thư viện animate.css để thử áp dụng nhiều hoạt ảnh trên cùng phần tử
     Thư viện glightbox video và responsive voice.
-    Còn lại 99% tự code -->
+    Còn lại 99% tự code
+    https://bootstrapmade.com/bizland-bootstrap-business-template/
+    -->
   </head>
 
   <body>
@@ -67,28 +69,111 @@
             </a>
           </div>
         </div>
-        <div class="menu flex items-center justify-center gap-10">
+
+        <div class="menu mobile-none flex items-center justify-center gap-10">
           <div class="item home">
-            <a href="#" id="home" class="header_link">Home</a>
+            <label class="nav_items" for="nav1">
+              <a href="#hero" id="home" class="header_link">Home<button id="nav1"></button></a>
+            </label>
           </div>
+
           <div class="item products">
-            <a href="#products" id="products_link" class="header_link">Products</a>
+            <label class="nav_items" for="nav2">
+              <a href="#products" id="products_link" class="header_link">Products<button id="nav2"></button></a>
+            </label>
           </div>
+
           <div class="item guidlines">
-            <a href="#skills" id="skills_link" class="header_link">Guid lines</a>
+            <label class="nav_items" for="nav3">
+              <a href="#skills" id="skills_link" class="header_link">Guid lines<button id="nav3"></button></a>
+            </label>
           </div>
+
           <div class="item review">
-            <a href="#review" id="review_link" class="header_link">Review</a>
+            <label class="nav_items" for="nav4">
+              <a href="#review" id="review_link" class="header_link">Review<button id="nav4"></button></a>
+            </label>
           </div>
         </div>
+
         <div class="btn rectangle text_clip flex-center hoverBtn" style="--content: 'Login'">Login</div>
-        <div class="btn menuBtn desktop-none">
-          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="9" height="1" fill="#C4C4C4" />
-            <rect y="4" width="9" height="1" fill="#C4C4C4" />
-            <rect y="8" width="9" height="1" fill="#C4C4C4" />
-          </svg>
+
+        <div class="desktop-none items-center">
+          <!-- <label for="openMenu" class="btn menuBtn">
+            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="9" height="1" fill="#C4C4C4" />
+              <rect y="4" width="9" height="1" fill="#C4C4C4" />
+              <rect y="8" width="9" height="1" fill="#C4C4C4" />
+            </svg>
+          </label> -->
+          <label class="btn menuBtn desktop-none items-center" for="open1">
+            <a href="#openMenu">
+              <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="9" height="1" fill="#C4C4C4" />
+                <rect y="4" width="9" height="1" fill="#C4C4C4" />
+                <rect y="8" width="9" height="1" fill="#C4C4C4" />
+              </svg>
+              <button id="open1"></button
+            ></a>
+          </label>
         </div>
+      </div>
+    </div>
+
+    <!-- <input type="radio" name="toggleOpenClose" id="openMenu" /> -->
+    <!-- <input type="radio" name="toggleOpenClose" checked id="closeMenu" /> -->
+    <div class="toggleOpenClose" id="openMenu"></div>
+    <div class="toggleOpenClose" id="closeMenu"></div>
+
+    <div class="wrapMobileMenu">
+      <div class="mobileMenu">
+        <label class="closeMenu" for="cl0">
+          <a href="#closeMenu">
+            <span class="btn closeMobileMenu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </span>
+            <button id="cl0"></button>
+          </a>
+        </label>
+        <ul class="list">
+          <li class="item closeMobileMenu">
+            <label class="close" for="cl1">
+              <a class="item_link" href="#">Home<button id="cl1"></button></a>
+            </label>
+          </li>
+          <li class="item closeMobileMenu">
+            <label class="close" for="cl2">
+              <a class="item_link" href="#products">Products<button id="cl2"></button></a>
+            </label>
+          </li>
+          <li class="item closeMobileMenu">
+            <label class="close" for="cl3">
+              <a class="item_link" href="#skills">Guidlines<button id="cl3"></button></a>
+            </label>
+          </li>
+          <li class="item closeMobileMenu">
+            <label class="close" for="cl4">
+              <a class="item_link" href="#review">Review<button id="cl4"></button></a>
+            </label>
+          </li>
+          <!-- <li class="item closeMobileMenu">
+            <a href="#products" class="item_link">Products</a>
+          </li>
+          <li class="item closeMobileMenu">
+            <a href="#skills" class="item_link">Guidlines</a>
+          </li>
+          <li class="item closeMobileMenu">
+            <a href="#review" class="item_link">Review</a>
+          </li> -->
+        </ul>
       </div>
     </div>
 
@@ -349,7 +434,7 @@
         <div class="contain service allCard flex-center gap-10">
           <div style="--filter-color: var(--primary-color-green)" class="item card flex flex-col gap-6">
             <a class="icon strucred" href="">
-              <img class="" src="./assets/img/Small_icon/strucred.svg" alt="" />
+              <img loading="lazy" class="" src="./assets/img/Small_icon/strucred.svg" alt="" />
             </a>
 
             <div class="overall">
@@ -362,7 +447,7 @@
             <div class="wrap_cardHead flex items-center">
               <span class="dashLine"></span>
               <a class="icon strucred" href="">
-                <img class="" src="./assets/img/Small_icon/lock.svg" alt="" />
+                <img loading="lazy" class="" src="./assets/img/Small_icon/lock.svg" alt="" />
               </a>
             </div>
 
@@ -376,7 +461,7 @@
             <div class="wrap_cardHead flex items-center">
               <span class="dashLine"></span>
               <a class="icon strucred" href="">
-                <img class="" src="./assets/img/Small_icon/support.svg" alt="" />
+                <img loading="lazy" class="" src="./assets/img/Small_icon/support.svg" alt="" />
               </a>
             </div>
             <div class="overall">
@@ -589,7 +674,10 @@
             <ul class="wrapTask">
               <li class="itemsTask hoverBtn" style="--content: 'Design'">
                 <a class="task_link justify-between" href="#!">
-                  <span class="icon taskBtn" style="background-image: url(./assets/img/Small_icon/action.svg)"></span>
+                  <span
+                    class="icon taskBtn"
+                    loading="lazy"
+                    style="background-image: url(./assets/img/Small_icon/action.svg)"></span>
                   <span class="desc text_clip" style="--bgr-clip: var(--bgr-clip-text2)">Design</span>
                 </a>
               </li>
@@ -760,7 +848,6 @@
 
             <div class="wrap_daily bgr_b1d">
               <div class="dots_dots_dots"></div>
-
               <div class="item daily flex items-center">
                 <span class="icon base_icon chart">
                   <svg width="215" height="212" viewBox="0 0 215 212" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1047,11 +1134,14 @@
             <div class="flip-card-inner is_flipped_1">
               <div class="flip-card-front flip_front_1">
                 <label class="label_img" for="flip_1">
-                  <img src="https://i.ytimg.com/vi/DpvYHLUiZpc/maxresdefault.jpg" alt="The Scream" />
+                  <img loading="lazy" src="https://i.ytimg.com/vi/DpvYHLUiZpc/maxresdefault.jpg" alt="The Scream" />
                 </label>
               </div>
               <div class="flip-card-back flip_back_1">
-                <img src="https://files.fullstack.edu.vn/f8-prod/banners/32/6421144f7b504.png" alt="Avatar" />
+                <img
+                  loading="lazy"
+                  src="https://files.fullstack.edu.vn/f8-prod/banners/32/6421144f7b504.png"
+                  alt="Avatar" />
                 <label for="close_flip"><span class="close_flip btn">Close</span></label>
               </div>
             </div>
@@ -1060,12 +1150,16 @@
               <div class="flip-card-front flip_front_2">
                 <label class="label_img" for="flip_2">
                   <img
+                    loading="lazy"
                     src="https://files.fullstack.edu.vn/f8-prod/blog_posts/3589/628c6853275b2.jpg"
                     alt="The Scream" />
                 </label>
               </div>
               <div class="flip-card-back flip_back_2">
-                <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7924/64a2487459fe5.jpg" alt="Avatar" />
+                <img
+                  loading="lazy"
+                  src="https://files.fullstack.edu.vn/f8-prod/blog_posts/7924/64a2487459fe5.jpg"
+                  alt="Avatar" />
                 <label for="close_flip"><span class="close_flip btn">Close</span></label>
               </div>
             </div>
@@ -1073,11 +1167,11 @@
             <div class="flip-card-inner is_flipped_3">
               <div class="flip-card-front flip_front_3">
                 <label class="label_img" for="flip_3">
-                  <img src="https://i.ytimg.com/vi/YH-E4Y3EaT4/maxresdefault.jpg" alt="The Scream" />
+                  <img loading="lazy" src="https://i.ytimg.com/vi/YH-E4Y3EaT4/maxresdefault.jpg" alt="The Scream" />
                 </label>
               </div>
               <div class="flip-card-back flip_back_3">
-                <img src="https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg" alt="Avatar" />
+                <img loading="lazy" src="https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg" alt="Avatar" />
                 <label for="close_flip"><span class="close_flip btn">Close</span></label>
               </div>
             </div>
@@ -1101,7 +1195,10 @@
                   style="--filter-color: var(--primary-color-dark-orange)">
                   <div class="item flex flex-col items-center justify-content-start gap-6">
                     <span class="icon view_img">
-                      <img src="https://files.fullstack.edu.vn/f8-prod/banners/26/63dc61f2a061e.png" alt="" />
+                      <img
+                        loading="lazy"
+                        src="https://files.fullstack.edu.vn/f8-prod/banners/26/63dc61f2a061e.png"
+                        alt="" />
                       <a href="#" class="info btn">Product Engineer</a>
                     </span>
                     <p class="desc">The quick brown fox jumped over the lazy dog.</p>
@@ -1125,7 +1222,10 @@
                 <div class="base base_review flex-1-0-a bgr_b1d" style="--filter-color: var(--primary-color-green)">
                   <div class="item flex flex-col items-center justify-content-start gap-6">
                     <span class="icon view_img">
-                      <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/6574/63f72b782aa83.jpg" alt="" />
+                      <img
+                        loading="lazy"
+                        src="https://files.fullstack.edu.vn/f8-prod/blog_posts/6574/63f72b782aa83.jpg"
+                        alt="" />
                       <a href="#" class="info btn">Desing Engineer</a>
                     </span>
                     <p class="desc">The quick brown fox jumped over the lazy dog.</p>
@@ -1150,7 +1250,10 @@
                 <div class="base base_review flex-1-0-a bgr_b1d" style="--filter-color: var(--primary-color-yellow)">
                   <div class="item flex flex-col items-center justify-content-start gap-6">
                     <span class="icon view_img">
-                      <img src="https://files.fullstack.edu.vn/f8-prod/blog_posts/6568/63f70f4b6a2f8.jpg" alt="" />
+                      <img
+                        loading="lazy"
+                        src="https://files.fullstack.edu.vn/f8-prod/blog_posts/6568/63f70f4b6a2f8.jpg"
+                        alt="" />
                       <a href="#" class="info btn">Tutorial Engineer</a>
                     </span>
                     <p class="desc">The quick brown fox jumped over the lazy dog.</p>
@@ -1176,371 +1279,477 @@
           </div>
         </div>
 
-        <div class="refreshNews testmonials container parents_dots">
+        <div class="refreshNews testmonials container">
           <div class="review_header desktop-none">
             <h2 class="section_title quests_title"><span class="text_clip strong">Test</span>monials</h2>
           </div>
-          <div class="wrap_review flex gap-16 flex-nowrap">
+
+          <div class="wrap_review slider flex gap-16 flex-nowrap">
             <input type="radio" name="Arrow" id="leftArrow" hidden />
             <input type="radio" name="Arrow" id="rightArrow" hidden />
 
-            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-dark-orange)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon icon_quote">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg> </span
-                    ></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg>
-                      </span>
+            <div class="slider_content flex gap-16 flex-nowrap">
+              <div class="slide_items" id="slide-1">
+                <div
+                  id="slides_1"
+                  class="base base_review_slide flex-1-0-a"
+                  style="--filter-color: var(--primary-color-yellow)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="base active base_review flex-1-0-a" style="--filter-color: var(--primary-color-yellow)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span
+                        class="icon taskAvatar"
+                        style="
+                          --data-bgr: url(https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png);
+                        ">
+                        <span class="dots"> </span>
                       </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide_items" id="slide-2">
+                <div
+                  id="slides_2"
+                  class="base base_review_slide flex-1-0-a"
+                  style="--filter-color: var(--primary-color-green)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
                     </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-dark-orange)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon icon_quote">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg> </span
-                    ></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="base active base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span
+                        class="icon taskAvatar"
+                        style="
+                          --data-bgr: url(https://files.fullstack.edu.vn/f8-prod/user_photos/168744/620a2c5e49d72.jpg);
+                        ">
+                        <span class="dots"> </span>
                       </span>
-                    </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg>
+              <div class="slide_items" id="slide-3">
+                <div
+                  id="slides_3"
+                  class="base base_review_slide flex-1-0-a"
+                  style="--filter-color: var(--primary-color-blue)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
+                    </span>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span
+                        class="icon taskAvatar"
+                        style="
+                          --data-bgr: url(https://files.fullstack.edu.vn/f8-prod/user_avatars/36050/649fc3c653f2c.png);
+                        ">
+                        <span class="dots"> </span>
                       </span>
-                    </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="base active base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg>
+              <div class="slide_items" id="slide-4">
+                <div
+                  id="slides_4"
+                  class="base base_review_slide flex-1-0-a"
+                  style="--filter-color: var(--primary-color-dark-orange)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
+                    </span>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
+                        <span class="dots"> </span>
                       </span>
-                    </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="base base_review flex-1-0-a" style="--filter-color: var(--primary-color-green)">
-              <div class="item flex flex-col items-center justify-content-start gap-6">
-                <span class="icon">
-                  <svg width="45" height="30" viewBox="0 0 45 30" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
-                    <path
-                      d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
-                  </svg>
-                </span>
-                <p class="descs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-                <div class="itemsTask flex justify-start">
-                  <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
-                    <span class="dots"> </span>
-                  </span>
-                  <div class="wrap_desc flex flex-col justify-content-start">
-                    <span class="title"> Create Wireframe</span>
-                    <span class="developer flex items-center justify-between">
-                      <span class="desc_text">Developer</span>
-
-                      <span class="desc_svg">
-                        <svg
-                          width="58"
-                          height="17"
-                          viewBox="0 0 58 17"
-                          fill="transparent"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
-                          <path
-                            d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
-                          <path
-                            d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
-                        </svg>
+              <div class="slide_items" id="slide-5">
+                <div
+                  id="slides_5"
+                  class="base base_review_slide flex-1-0-a"
+                  style="--filter-color: var(--primary-color-lightgreen)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
+                    </span>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span
+                        class="icon taskAvatar"
+                        style="
+                          --data-bgr: url(https://files.fullstack.edu.vn/f8-prod/user_avatars/40053/63bbbf92ca532.jpg);
+                        ">
+                        <span class="dots"> </span>
                       </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="slide_items">
+                <div class="base base_review_slide flex-1-0-a" style="--filter-color: var(--primary-color-blue)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
                     </span>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span
+                        class="icon taskAvatar"
+                        style="
+                          --data-bgr: url(https://files.fullstack.edu.vn/f8-prod/user_avatars/36050/649fc3c653f2c.png);
+                        ">
+                        <span class="dots"> </span>
+                      </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide_items">
+                <div class="base base_review_slide flex-1-0-a" style="--filter-color: var(--primary-color-dark-orange)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
+                    </span>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span class="icon taskAvatar" style="--data-bgr: url(../img/Slider/AdminSonDang.png)">
+                        <span class="dots"> </span>
+                      </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide_items">
+                <div class="base base_review_slide flex-1-0-a" style="--filter-color: var(--primary-color-lightgreen)">
+                  <div class="item flex flex-col items-center justify-content-start gap-6">
+                    <span class="icon">
+                      <svg
+                        width="45"
+                        height="30"
+                        viewBox="0 0 45 30"
+                        fill="transparent"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.5833 15.7103C12.0733 16.7043 10.2811 17.1804 8.47686 17.0667C6.67266 16.953 4.95436 16.2556 3.58116 15.0799C2.20796 13.9041 1.25434 12.3137 0.864155 10.5485C0.473965 8.78333 0.668366 6.93914 1.41803 5.29412C2.1677 3.6491 3.43197 2.29247 5.02014 1.42887C6.60832 0.565271 8.43425 0.241543 10.2225 0.506517C12.0108 0.77149 13.6644 1.61079 14.9339 2.89783C16.2034 4.18486 17.0199 5.84981 17.2604 7.64154C18.0208 11.377 18.3166 15.8665 16.8291 19.9311C15.2333 24.2853 11.6958 27.8561 5.36037 29.5145C4.83243 29.6358 4.27799 29.5467 3.81463 29.2661C3.35128 28.9855 3.01543 28.5354 2.87832 28.0114C2.74121 27.4873 2.81361 26.9304 3.08017 26.4589C3.34674 25.9873 3.78649 25.6381 4.3062 25.4853C9.4312 24.1436 11.827 21.4645 12.9166 18.4978C13.2395 17.6124 13.4583 16.677 13.5833 15.7103Z" />
+                        <path
+                          d="M39.9156 15.2938C38.4056 16.2878 36.6133 16.7639 34.8091 16.6502C33.0049 16.5365 31.2866 15.8391 29.9134 14.6634C28.5402 13.4876 27.5866 11.8972 27.1964 10.132C26.8062 8.36682 27.0006 6.52263 27.7503 4.87761C28.5 3.23259 29.7642 1.87596 31.3524 1.01237C32.9406 0.148767 34.7665 -0.174961 36.5548 0.0900127C38.343 0.354986 39.9966 1.19429 41.2662 2.48132C42.5357 3.76835 43.3522 5.43331 43.5926 7.22503C44.3531 10.9604 44.6489 15.45 43.1614 19.5146C41.5656 23.8688 38.0281 27.4396 31.6926 29.0979C31.1647 29.2193 30.6103 29.1302 30.1469 28.8496C29.6836 28.569 29.3477 28.1189 29.2106 27.5948C29.0735 27.0708 29.1459 26.5139 29.4124 26.0424C29.679 25.5708 30.1188 25.2216 30.6385 25.0688C35.7635 23.7271 38.1593 21.0479 39.2489 18.0813C39.5718 17.1959 39.7906 16.2604 39.9156 15.2938Z" />
+                      </svg>
+                    </span>
+                    <p class="desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua.
+                    </p>
+                    <div class="itemsTask flex justify-start">
+                      <span
+                        class="icon taskAvatar"
+                        style="
+                          --data-bgr: url(https://files.fullstack.edu.vn/f8-prod/user_avatars/40053/63bbbf92ca532.jpg);
+                        ">
+                        <span class="dots"> </span>
+                      </span>
+                      <div class="wrap_desc flex flex-col justify-content-start">
+                        <span class="title"> Create Wireframe</span>
+                        <span class="developer flex items-center justify-between">
+                          <span class="desc_text">Developer</span>
+                          <span class="desc_svg">
+                            <svg
+                              width="58"
+                              height="17"
+                              viewBox="0 0 58 17"
+                              fill="transparent"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0.150879L10.8684 4.20288L15.6085 5.67874L12.6412 9.65888L12.7023 14.623L8 13.0309L3.29772 14.623L3.35884 9.65888L0.391548 5.67874L5.13161 4.20288L8 0.150879Z" />
+                              <path
+                                d="M29 0.150879L31.8684 4.20288L36.6085 5.67874L33.6412 9.65888L33.7023 14.623L29 13.0309L24.2977 14.623L24.3588 9.65888L21.3915 5.67874L26.1316 4.20288L29 0.150879Z" />
+                              <path
+                                d="M50 0.150879L52.8684 4.20288L57.6085 5.67874L54.6412 9.65888L54.7023 14.623L50 13.0309L45.2977 14.623L45.3588 9.65888L42.3915 5.67874L47.1316 4.20288L50 0.150879Z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="wrapControl desktop-none">
+            <label class="act act_1" style="--bgr-act: var(--primary-color-yellow)" for="target_1"
+              >1
+              <a href="#slide-1"><button id="target_1"></button>1</a>
+            </label>
+            <label class="act act_2" style="--bgr-act: var(--primary-color-green)" for="target_2"
+              >2
+              <a href="#slide-2"><button id="target_2"></button>2</a>
+            </label>
+            <label class="act act_3" style="--bgr-act: var(--primary-color-blue)" for="target_3"
+              >3
+              <a href="#slide-3"><button id="target_3"></button>3</a>
+            </label>
+            <label class="act act_4" style="--bgr-act: var(--primary-color-dark-orange)" for="target_4"
+              >4
+              <a href="#slide-4"><button id="target_4"></button>4</a>
+            </label>
+            <label class="act act_5" style="--bgr-act: var(--primary-color-lightgreen)" for="target_5"
+              >5
+              <a href="#slide-5"><button id="target_5"></button>5</a>
+            </label>
           </div>
 
           <div class="leftRightArrow inline-flex">
@@ -1577,8 +1786,6 @@
               </svg>
             </label>
           </div>
-
-          <div class="dots_dots_dots desktop-none"></div>
         </div>
       </section>
     </main>
@@ -1589,38 +1796,45 @@
       <div class="footer_head">
         <div class="header">
           <div class="container flex flex-wrap-reverse items-center justify-between">
-            <div class="logo flex items-center justify-start">
-              <div class="logoImg flex-center">
-                <a href="#">
-                  <svg width="87" xmlns="http://www.w3.org/2000/svg">
-                    <use href="#svg_logo" />
-                  </svg>
-                </a>
+            <div class="wrap_footer_input">
+              <div class="logo flex items-center justify-start">
+                <div class="logoImg flex-center">
+                  <a href="#">
+                    <svg width="87" xmlns="http://www.w3.org/2000/svg">
+                      <use href="#svg_logo" />
+                    </svg>
+                  </a>
+                </div>
               </div>
 
-              <div class="wrap_input desktop-none">
-                <input class="input_subscribe" placeholder="Your Email Address" type="email" required />
-                <span class="icon svg">
-                  <svg width="40" height="40" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="19" cy="19" r="19" style="fill: var(--bgr-cir, #2a2a2a)" />
-                    <path
-                      d="M17 13L22.5 18.5L17 24"
-                      stroke="#F9F9F9"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
+              <div class="footer_input items-center justify-between desktop-none">
+                <div class="wrap_input">
+                  <input class="input_subscribe" placeholder="Your Email Address" type="email" required />
+                  <span class="icon svg">
+                    <svg width="40" height="40" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="19" cy="19" r="19" style="fill: var(--bgr-cir, #2a2a2a)" />
+                      <path
+                        d="M17 13L22.5 18.5L17 24"
+                        stroke="#F9F9F9"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </div>
 
-              <div class="btn menuBtn desktop-none">
-                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="9" height="1" fill="#C4C4C4"></rect>
-                  <rect y="4" width="9" height="1" fill="#C4C4C4"></rect>
-                  <rect y="8" width="9" height="1" fill="#C4C4C4"></rect>
-                </svg>
+                <div class="desktop-none">
+                  <span class="btn menuBtn">
+                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="9" height="1" fill="#C4C4C4"></rect>
+                      <rect y="4" width="9" height="1" fill="#C4C4C4"></rect>
+                      <rect y="8" width="9" height="1" fill="#C4C4C4"></rect>
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
+
             <div class="started flex items-center gap-36">
               <span>Ready to get started?</span>
               <div class="btn rectangle active text_clip flex-center hoverBtn" style="--content: 'Get Started'">
@@ -1652,7 +1866,6 @@
             <span class="icon svg">
               <svg width="40" height="40" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="19" cy="19" r="19" style="fill: var(--bgr-cir, #2a2a2a)" />
-                <!-- fill: var(--fill) -->
                 <path
                   d="M24 16.3077H20.6667V13.3846C20.6667 12.5778 21.264 12.6538 22 12.6538H23.3333V9H20.6667C18.4573 9 16.6667 10.9628 16.6667 13.3846V16.3077H14V19.9615H16.6667V28H20.6667V19.9615H22.6667L24 16.3077Z"
                   fill="#F9F9F9" />
@@ -1684,26 +1897,26 @@
           <div class="">
             <span class="title">Services</span>
             <ul class="">
-              <li><a href="#!" class="services_link_f">Email Marketing</a></li>
-              <li><a href="#!" class="services_link_f">Campaigns</a></li>
-              <li><a href="#!" class="services_link_f">Branding</a></li>
-              <li><a href="#!" class="services_link_f">Online</a></li>
+              <li><a href="#!" class="services_footer_link">Email Marketing</a></li>
+              <li><a href="#!" class="services_footer_link">Campaigns</a></li>
+              <li><a href="#!" class="services_footer_link">Branding</a></li>
+              <li><a href="#!" class="services_footer_link">Online</a></li>
             </ul>
           </div>
           <div class="">
             <span class="title">About</span>
             <ul class="">
-              <li><a href="#!" class="about_link_f">Our Story</a></li>
-              <li><a href="#!" class="about_link_f">Benefits</a></li>
-              <li><a href="#!" class="about_link_f">Team</a></li>
-              <li><a href="#!" class="about_link_f">Careers</a></li>
+              <li><a href="#!" class="about_footer_link">Our Story</a></li>
+              <li><a href="#!" class="about_footer_link">Benefits</a></li>
+              <li><a href="#!" class="about_footer_link">Team</a></li>
+              <li><a href="#!" class="about_footer_link">Careers</a></li>
             </ul>
           </div>
           <div class="">
             <span class="title">Help</span>
             <ul class="">
-              <li><a href="#!" class="help_link_f">FAQs</a></li>
-              <li><a href="#!" class="help_link_f">Contact Us</a></li>
+              <li><a href="#!" class="help_footer_link">FAQs</a></li>
+              <li><a href="#!" class="help_footer_link">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -1749,6 +1962,16 @@
             );
           }
         })(".back-to-top");
+
+        // const closeMobileMenu = (() => {
+        //   const parentEl = document.querySelector(".mobileMenu");
+        //   parentEl.onclick = (e) => {
+        //     const closeMenu = document.querySelector("#closeMenu");
+        //     if (e.target.parentElement.classList.contains("closeMobileMenu")) {
+        //       closeMenu.checked = true;
+        //     }
+        //   };
+        // })();
       })();
     </script>
   </body>
