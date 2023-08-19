@@ -559,7 +559,9 @@ body:has(#openMenu:target) .wrapMobileMenu {
 # My main page
 --------------------------------------------------------------*/
 #main {
+  position: relative;
   margin-top: 4em;
+  width: 100%;
 }
 
 /* The end My main  */
@@ -2390,6 +2392,7 @@ input[name="flip"] {
   overflow: hidden;
   z-index: 99;
 }
+
 .base_review .item .icon img {
   position: absolute;
   display: inline-block;
@@ -2402,7 +2405,7 @@ input[name="flip"] {
   object-fit: cover;
   border-radius: 1.2rem;
   z-index: 1;
-  scale: var(--scale, 0.92);
+  scale: var(--scale, 1);
   filter: brightness(var(--brt_ness, 0.8));
   box-shadow: 0 0 4px #b9dbfdb3, 0 0 12px #000000f0;
   transition: scale 1s linear, filter 0.5s linear;
@@ -2445,7 +2448,6 @@ input[name="flip"] {
 a.view_all.btn svg {
   translate: 0 -2px;
 }
-
 .refreshNews.testmonials.container {
   --w: calc((100% - 8rem) / 3);
   --d: calc((var(--w) * 5) + 20rem);
@@ -2453,9 +2455,8 @@ a.view_all.btn svg {
   position: relative;
   margin-top: 2em;
   width: clamp(30rem, 80vw + 1rem, 140rem);
-  height: 60rem;
   padding-top: 4em;
-  padding-bottom: 6em;
+  padding-bottom: 4em;
   overflow-x: clip;
 }
 
@@ -2506,7 +2507,7 @@ a.view_all.btn svg {
 }
 .slide_items {
   flex-shrink: 0;
-  padding: 0rem 0.4rem 2rem;
+  padding: 0.6rem;
   scroll-snap-align: center;
   transform-origin: center center;
   width: min(calc((100% - 8rem) / 3), 100%);
@@ -2587,15 +2588,14 @@ a.view_all.btn svg {
   box-shadow: 0px 0px 2px #6d9ada55;
   transition: all 0.25s linear;
 }
-.base_review_slide .item,
-.testmonials .base_review .item {
+.base_review_slide .item {
   position: relative;
   padding-bottom: 0;
   border-radius: 1.2rem;
+  min-height: 28vh;
   box-shadow: var(--box-shadow, inset 0 0 2px #070a23);
 }
-.base_review_slide .item > .icon,
-.testmonials .base_review .item > .icon {
+.base_review_slide .item > .icon {
   position: absolute;
   top: 0;
   right: 20%;
@@ -2604,8 +2604,7 @@ a.view_all.btn svg {
   translate: 60%;
   cursor: default;
 }
-.base_review_slide .item > .icon::before,
-.testmonials .base_review .item > .icon::before {
+.base_review_slide .item > .icon::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -2616,16 +2615,16 @@ a.view_all.btn svg {
   height: 2px;
   background: var(--bgr-before, transparent);
   scale: var(--scale-hover, 0);
-  transition: scale 0.5s;
+  transition: scale 0.5s ease-in-out 0.3s;
 }
 
 .testmonials .base_review_slide .item > .icon svg {
-  transform: rotate(var(--rotate, 540deg));
+  transform: rotate(var(--rotate, 180deg));
 }
 .base_review_slide svg {
   transition: fill 0.3s linear;
   fill: var(--filter-color-hover, var(--bs-gray-600));
-  transition: fill 0.3s linear, transform 0.5s linear, -webkit-transform 0.5s linear;
+  transition: fill 0.3s linear, transform 0.5s linear 0.3s, -webkit-transform 0.5s linear 0.3s;
 }
 .base_review_slide.active {
   --bgr-hover: var(--bgr-active-hover, #282c30);
@@ -2644,7 +2643,7 @@ a.view_all.btn svg {
   --bgr-active-hover: #131517;
   --text-color-active: var(--text-color-4);
   --scale-active: 0;
-  --rotate-active: 540deg;
+  --rotate-active: 720deg;
 }
 .testmonials .base_review_slide:hover {
   --filter-color-hover: var(--filter-color);
@@ -2653,7 +2652,7 @@ a.view_all.btn svg {
   --scale-hover: 1;
   --bgr-before: var(--filter-color);
   --scale-active: 1;
-  --rotate: 0deg;
+  --rotate: 720deg;
 }
 .testmonials .slide_items:target > .base_review_slide {
   --inset-top: 0%;
@@ -2662,7 +2661,7 @@ a.view_all.btn svg {
   --scale-hover: 1;
   --bgr-before: var(--filter-color);
   --scale-active: 1;
-  --rotate: 0deg;
+  --rotate: 720deg;
 }
 .testmonials:has(#slide-1:target) .wrapControl .act_1,
 .testmonials:has(#slide-2:target) .wrapControl .act_2,
@@ -2679,7 +2678,7 @@ a.view_all.btn svg {
 }
 .testmonials .base_review_slide.active:hover svg {
   fill: var(--filter-color);
-  --rotate-active: 0deg;
+  --rotate-active: 720deg;
 }
 .testmonials .base_review_slide:hover .icon.taskAvatar {
   scale: 2;
@@ -2700,6 +2699,7 @@ a.view_all.btn svg {
   margin-top: 4.5rem;
   margin-bottom: 2.5rem;
   width: 90%;
+  font-size: 1.4rem;
   text-align: left;
   color: var(--text-color-hover, var(--text-color-4));
   transition: color 0.3s linear;
@@ -2738,7 +2738,7 @@ a.view_all.btn svg {
   --bottom_hover: 16%;
   --opacity_hover: 1;
   --visibility_hover: visible;
-  --scale: 1.1;
+  --scale: 1.15;
   --brt_ness: 1.2;
 }
 
@@ -2930,7 +2930,24 @@ a.view_all.btn svg {
 }
 
 /* The end Footer  */
-
+.acts {
+  display: none;
+}
+.ToTop_NoJS {
+  display: inline-flex;
+  position: sticky;
+  top: 91.2vh;
+  left: 90%;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 28px;
+  transition: color 0.3s ease-in-out;
+  z-index: 999999999999999999999;
+}
+.ToTop_NoJS:hover {
+  opacity: 0.8;
+  color: var(--text-color-1);
+}
 /* .hotspot + * { Ngăn chặn hành động lây lan!
   pointer-events: none;
   opacity: 0;
@@ -3214,6 +3231,7 @@ a.view_all.btn svg {
 
   .refreshNews.testmonials.container {
     min-height: 55rem;
+    height: 72vh;
     width: 96%;
     margin-top: 0;
     padding-bottom: 2em;
@@ -3261,8 +3279,8 @@ a.view_all.btn svg {
   }
   .refreshNews.testmonials .wrap_review {
     text-align: center;
+    margin-top: 2rem;
     width: 100%;
-    margin-top: 3em;
   }
 
   .refreshNews.testmonials .wrap_review .base_review {
@@ -3281,7 +3299,7 @@ a.view_all.btn svg {
     padding-bottom: 30px;
   }
   .wrapControl {
-    bottom: 2.6rem;
+    bottom: 3.6rem;
   }
   .footer .started span {
     font-size: 1.8rem;
@@ -3312,18 +3330,28 @@ a.view_all.btn svg {
   .slider_content {
     padding-bottom: 0;
   }
+  .testmonials .base_review_slide .item .desc {
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+  }
   .review_header {
-    margin-top: 6em;
+    margin-top: 4em;
   }
   .leftRightArrow {
     right: 1em;
-    top: 9.6em;
+    top: 7.6em;
   }
   .features .section_content::before {
     filter: blur(32px);
   }
   .back-to-top {
     bottom: 1.5rem;
+  }
+  .ToTop_NoJS {
+    top: 94.2vh;
+    left: 68%;
+    padding: 0;
+    font-size: 16px;
   }
 }
 
@@ -3384,7 +3412,7 @@ h1.animate__animated {
   box-shadow: inset 0 0 8px #444c5452;
   border: 0.5px solid #77808a96;
 }
-body:has(#openMenu:checked) {
+body:has(#openMenu:target) {
   --overflow-hidden: hidden;
 }
 .closeMobileMenu button {

@@ -73,7 +73,7 @@
         <div class="menu mobile-none flex items-center justify-center gap-10">
           <div class="item home">
             <label class="nav_items" for="nav1">
-              <a href="#hero" id="home" class="header_link">Home<button id="nav1"></button></a>
+              <a href="#Top" id="home" class="header_link">Home<button id="nav1"></button></a>
             </label>
           </div>
 
@@ -99,13 +99,6 @@
         <div class="btn rectangle text_clip flex-center hoverBtn" style="--content: 'Login'">Login</div>
 
         <div class="desktop-none items-center">
-          <!-- <label for="openMenu" class="btn menuBtn">
-            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="9" height="1" fill="#C4C4C4" />
-              <rect y="4" width="9" height="1" fill="#C4C4C4" />
-              <rect y="8" width="9" height="1" fill="#C4C4C4" />
-            </svg>
-          </label> -->
           <label class="btn menuBtn desktop-none items-center" for="open1">
             <a href="#openMenu">
               <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,8 +113,6 @@
       </div>
     </div>
 
-    <!-- <input type="radio" name="toggleOpenClose" id="openMenu" /> -->
-    <!-- <input type="radio" name="toggleOpenClose" checked id="closeMenu" /> -->
     <div class="toggleOpenClose" id="openMenu"></div>
     <div class="toggleOpenClose" id="closeMenu"></div>
 
@@ -146,7 +137,7 @@
         <ul class="list">
           <li class="item closeMobileMenu">
             <label class="close" for="cl1">
-              <a class="item_link" href="#">Home<button id="cl1"></button></a>
+              <a class="item_link" href="#Top">Home<button id="cl1"></button></a>
             </label>
           </li>
           <li class="item closeMobileMenu">
@@ -164,20 +155,15 @@
               <a class="item_link" href="#review">Review<button id="cl4"></button></a>
             </label>
           </li>
-          <!-- <li class="item closeMobileMenu">
-            <a href="#products" class="item_link">Products</a>
-          </li>
-          <li class="item closeMobileMenu">
-            <a href="#skills" class="item_link">Guidlines</a>
-          </li>
-          <li class="item closeMobileMenu">
-            <a href="#review" class="item_link">Review</a>
-          </li> -->
         </ul>
       </div>
     </div>
 
     <main id="main">
+      <a href="#Top">
+        <input hidden type="text" name="action" id="test_51" />
+      </a>
+
       <section id="hero" class="container hero">
         <div class="hero_header flex flex-col items-center justify-center">
           <h1 class="section_title animate__animated animate__bounceInDown animate__swing">
@@ -429,7 +415,7 @@
           </div>
         </div>
       </section>
-
+      <label class="acts ToTop_NoJS" for="test_51">ToTop NoJS</label>
       <div id="service" class="container">
         <div class="contain service allCard flex-center gap-10">
           <div style="--filter-color: var(--primary-color-green)" class="item card flex flex-col gap-6">
@@ -1951,17 +1937,17 @@
         const glightbox = GLightbox({
           selector: ".glightbox",
         });
-        const onscroll = (el, listener) => {
-          el.addEventListener("scroll", listener);
-        };
-        const backtotop = ((sle) => {
-          const el = document.querySelector(sle);
-          if (el) {
-            onscroll(document, () =>
-              window.scrollY > 100 ? el.classList.add("active") : el.classList.remove("active"),
-            );
-          }
-        })(".back-to-top");
+        // const onscroll = (el, listener) => {
+        //   el.addEventListener("scroll", listener);
+        // };
+        // const backtotop = ((sle) => {
+        //   const el = document.querySelector(sle);
+        //   if (el) {
+        //     onscroll(document, () =>
+        //       window.scrollY > 100 ? el.classList.add("active") : el.classList.remove("active"),
+        //     );
+        //   }
+        // })(".back-to-top");
 
         // const closeMobileMenu = (() => {
         //   const parentEl = document.querySelector(".mobileMenu");
@@ -1975,4 +1961,4 @@
       })();
     </script>
   </body>
-</html> 
+</html>
