@@ -1,0 +1,72 @@
+<svg id="svg_test" width="100%" height="100%" viewBox="0 0 490 490">
+  <g id="test-body-content">
+    <g transform="translate(245,245)">
+        <g>
+          <rect rx="9999" x="-15" y="-15" width="30" height="30" transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="10" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" dur="2s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          <animate
+            attributeName="opacity"
+            dur="2s"
+            keyTimes="0;1;2"
+            values="1;0.5;0"
+            fill="freeze"
+          />
+          </rect>
+          <rect rx="9999" x="-17" y="-17" width="34" height="34" transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="1" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" dur="2s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          <animate
+            attributeName="opacity"
+            dur="2s"
+            keyTimes="0;1;2"
+            values="1;0.5;0"
+            fill="freeze"
+          />
+          </rect>
+        </g>
+
+        <g>
+          <rect rx="9999" x="-15" y="-15" width="30" height="30" transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="10" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" begin="1s" dur="2s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          <animate
+            attributeName="opacity"
+            dur="2s"
+            keyTimes="0;1;2" begin="1s"
+            values="1;0.5;0"
+            fill="freeze"
+          />
+          </rect>
+          <rect rx="9999" x="-17" y="-17" width="34" height="34" transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="1" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" begin="1s" dur="2s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          <animate
+            attributeName="opacity"
+            dur="2s"
+            keyTimes="0;1;2" begin="1s"
+            values="1;0.5;0"
+            fill="freeze"
+          />
+          </rect>
+        </g>
+
+        <!-- <g>
+          <rect rx="9999" x="-15" y="-15" width="30" height="30" transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="10" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" begin="2s"  dur="3s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          </rect>
+          <rect rx="9999" x="-17" y="-17" width="34" height="34"  transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="1" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" begin="2s" dur="3s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          </rect>
+        </g> -->
+
+        <!-- <g>
+          <rect rx="9999" x="-15" y="-15" width="30" height="30" transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="10" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" begin="3s"  dur="3s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          </rect>
+          <rect rx="9999" x="-17" y="-17" width="34" height="34"  transform="skewX(30)" stroke="rgb(23,230,230, 0.02)" stroke-width="1" fill="rgb(23,230,230, 0.02)">
+          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0.2" to="2" begin="3s" dur="3s" repeatCount="indefinite" accumulate="none" fill="freeze" additive="replace"/>
+          </rect>
+        </g> -->
+
+        <rect rx="9999" x="-13" y="-13" width="26" height="26" transform="scale(2)" stroke="rgb(23,230,230, 0.03)" stroke-width="15" fill="rgb(23,230,230, 0)">
+        </rect>
+    </g>
+  </g>
+</svg>

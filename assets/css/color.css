@@ -1,0 +1,58 @@
+:root {
+  --primary-color-yellow: hsl(35.9deg 100% 46.86%);
+  --primary-color-green: hsl(157.11deg 88.99% 42.75%);
+  --primary-color-blue: hsl(257.55deg 89.83% 76.86%);
+  --primary-color-dark-orange: hsl(5.92deg 100% 70.2%);
+  --primary-color-lightgreen: hsl(122.41deg 71.31% 47.84%);
+  --primary-text-color: hsl(214.29deg 6.09% 54.9%);
+
+  --bs-black: hsl(0deg 0% 0%);
+  --bs-white: hsl(0deg 0% 100%);
+  --bs-blue: hsl(215.75deg 98.36% 52.16%);
+  --bs-indigo: hsl(262.83deg 89.68% 50.59%);
+  --bs-purple: hsl(261.26deg 50.6% 50.78%);
+  --bs-pink: hsl(330.18deg 66.53% 51.96%);
+  --bs-red: hsl(354.25deg 70.46% 53.53%);
+  --bs-orange: hsl(27.3deg 98.31% 53.53%);
+  --bs-yellow: hsl(45deg 100% 51.37%);
+  --bs-green: hsl(152.18deg 68.75% 31.37%);
+  --bs-teal: hsl(162.25deg 72.53% 45.69%);
+  --bs-cyan: hsl(190.04deg 89.72% 49.61%);
+
+  --bs-gray-100: hsl(210deg 16.67% 97.65%);
+  --bs-gray-200: hsl(210deg 15.79% 92.55%);
+  --bs-gray-300: hsl(210deg 13.79% 88.63%);
+  --bs-gray-400: hsl(210deg 13.95% 83.14%);
+  --bs-gray-500: hsl(210deg 10.81% 70.98%);
+  --bs-gray-600: hsl(210.24deg 7.3% 45.69%);
+  --bs-gray-700: hsl(210deg 8.75% 31.37%);
+  --bs-gray-800: hsl(210deg 10.34% 22.75%);
+  --bs-gray-900: hsl(210deg 10.81% 14.51%);
+
+  --bs-secondary: hsl(208.24deg 7.3% 45.69%);
+
+  --text-color-1: hsl(0deg 0% 99.61%);
+  --text-color-2: hsl(212.73deg 42.31% 89.8%);
+  --text-color-3: hsl(214.62deg 11.4% 55.29%);
+  --text-color-4: hsl(219.31deg 15.68% 36.27%);
+  --text-color-5: hsl(215deg 19.35% 24.31%);
+  --text-color-6: hsl(221.05deg 17.12% 21.76%);
+  --text-color-7: hsl(0deg 0% 25.88%);
+  --text-color-8: hsl(0deg 0% 20%);
+  --text-color-9: hsl(216deg 6.33% 15.49%);
+
+  --bs-span-1: hsl(214.13deg 87.2% 49.02%);
+  --bs-span-2: hsl(212.86deg 84% 49.02%);
+  --bs-span-3: hsl(210.9deg 100% 62.55%);
+
+  --bs_bg: hsl(210deg 9.52% 8.24%);
+  --bg-1: hsl(0deg 0% 99.22%);
+  --bg-2: hsl(220deg 20% 97.06%);
+  --bg-3: hsl(207.69deg 100% 97.45%);
+  --bg-4: hsl(214.29deg 70% 96.08%);
+  --bg-5: hsl(217.5deg 23.53% 93.33%);
+  --bg-6: hsl(176.67deg 100% 89.41%);
+  --bg-7: hsl(205deg 100% 49.41%);
+  --bs-light: hsl(210deg 16.67% 97.65%);
+  --light-icon-color: hsl(0deg 0% 56.86%);
+}

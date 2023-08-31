@@ -2491,7 +2491,7 @@ a.view_all.btn svg {
   display: flex;
   width: 100%;
   padding: 2px;
-  overflow-x: var(--overflow-x, auto);
+  overflow-x: var(--overflow-x, scroll);
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -2936,8 +2936,9 @@ a.view_all.btn svg {
 .ToTop_NoJS {
   display: inline-flex;
   position: sticky;
-  top: 91.2vh;
-  left: 90%;
+  width: 50px;
+  top: 90vh;
+  left: 82%;
   font-size: 22px;
   cursor: pointer;
   padding: 28px;
@@ -3349,7 +3350,8 @@ a.view_all.btn svg {
   }
   .ToTop_NoJS {
     top: 94.2vh;
-    left: 68%;
+    left: 52%;
+    width: max-content;
     padding: 0;
     font-size: 16px;
   }
@@ -3418,7 +3420,7 @@ body:has(#openMenu:target) {
 .closeMobileMenu button {
   display: none;
   --opacity-active: 1;
-  --scale-active: 1;
+  --scale-active: 1; 
 }
 /* .hero::before {
   content: "";
