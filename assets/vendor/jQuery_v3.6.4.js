@@ -363,7 +363,7 @@
     // Evaluates a script in a provided context; falls back to the global one
     // if not specified.
     globalEval: function (code, options, doc) {
-      DOMEval(code, {nonce: options && options.nonce}, doc);
+      DOMEval(code, { nonce: options && options.nonce }, doc);
     },
 
     each: function (obj, callback) {
@@ -706,7 +706,7 @@
           function (elem) {
             return elem.disabled === true && elem.nodeName.toLowerCase() === "fieldset";
           },
-          {dir: "parentNode", next: "legend"},
+          { dir: "parentNode", next: "legend" },
         );
 
       // Optimize for push.apply( _, NodeList )
@@ -1758,10 +1758,10 @@
         find: {},
 
         relative: {
-          ">": {dir: "parentNode", first: true},
-          " ": {dir: "parentNode"},
-          "+": {dir: "previousSibling", first: true},
-          "~": {dir: "previousSibling"},
+          ">": { dir: "parentNode", first: true },
+          " ": { dir: "parentNode" },
+          "+": { dir: "previousSibling", first: true },
+          "~": { dir: "previousSibling" },
         },
 
         preFilter: {
@@ -2269,10 +2269,10 @@
       Expr.pseudos["nth"] = Expr.pseudos["eq"];
 
       // Add button/input type pseudos
-      for (i in {radio: true, checkbox: true, file: true, password: true, image: true}) {
+      for (i in { radio: true, checkbox: true, file: true, password: true, image: true }) {
         Expr.pseudos[i] = createInputPseudo(i);
       }
-      for (i in {submit: true, reset: true}) {
+      for (i in { submit: true, reset: true }) {
         Expr.pseudos[i] = createButtonPseudo(i);
       }
 
@@ -2610,7 +2610,7 @@
                 i > 1 &&
                   toSelector(
                     // If the preceding token was a descendant combinator, insert an implicit any-element `*`
-                    tokens.slice(0, i - 1).concat({value: tokens[i - 2].type === " " ? "*" : ""}),
+                    tokens.slice(0, i - 1).concat({ value: tokens[i - 2].type === " " ? "*" : "" }),
                   ).replace(rtrim, "$1"),
                 matcher,
                 i < j && matcherFromTokens(tokens.slice(i, j)),
@@ -4520,7 +4520,7 @@
   var isAttached = function (elem) {
       return jQuery.contains(elem.ownerDocument, elem);
     },
-    composed = {composed: true};
+    composed = { composed: true };
 
   // Support: IE 9 - 11+, Edge 12 - 18+, iOS 10.0 - 10.2 only
   // Check attachment across shadow DOM boundaries when possible (gh-3504)
@@ -5288,7 +5288,7 @@
               }
             }
             if (matchedHandlers.length) {
-              handlerQueue.push({elem: cur, handlers: matchedHandlers});
+              handlerQueue.push({ elem: cur, handlers: matchedHandlers });
             }
           }
         }
@@ -5297,7 +5297,7 @@
       // Add the remaining (directly-bound) handlers
       cur = this;
       if (delegateCount < handlers.length) {
-        handlerQueue.push({elem: cur, handlers: handlers.slice(delegateCount)});
+        handlerQueue.push({ elem: cur, handlers: handlers.slice(delegateCount) });
       }
 
       return handlerQueue;
@@ -5615,7 +5615,7 @@
     jQuery.event.addProp,
   );
 
-  jQuery.each({focus: "focusin", blur: "focusout"}, function (type, delegateType) {
+  jQuery.each({ focus: "focusin", blur: "focusout" }, function (type, delegateType) {
     jQuery.event.special[type] = {
       // Utilize native event if possible so blur/focus sequence is correct
       setup: function () {
@@ -6514,7 +6514,7 @@
     // except "table", "table-cell", or "table-caption"
     // See here for display values: https://developer.mozilla.org/en-US/docs/CSS/display
     rdisplayswap = /^(none|table(?!-c[ea]).+)/,
-    cssShow = {position: "absolute", visibility: "hidden", display: "block"},
+    cssShow = { position: "absolute", visibility: "hidden", display: "block" },
     cssNormalTransform = {
       letterSpacing: "0",
       fontWeight: "400",
@@ -6881,7 +6881,7 @@
       return (
         (parseFloat(curCSS(elem, "marginLeft")) ||
           elem.getBoundingClientRect().left -
-            swap(elem, {marginLeft: 0}, function () {
+            swap(elem, { marginLeft: 0 }, function () {
               return elem.getBoundingClientRect().left;
             })) + "px"
       );
@@ -7092,7 +7092,7 @@
   function genFx(type, includeWidth) {
     var which,
       i = 0,
-      attrs = {height: type};
+      attrs = { height: type };
 
     // If we include width, step value is 1 to do all cssExpand values,
     // otherwise step value is 2 to skip over Left and Right
@@ -7253,7 +7253,7 @@
             hidden = dataShow.hidden;
           }
         } else {
-          dataShow = dataPriv.access(elem, "fxshow", {display: restoreDisplay});
+          dataShow = dataPriv.access(elem, "fxshow", { display: restoreDisplay });
         }
 
         // Store hidden/visible for toggle so `.stop().toggle()` "reverses"
@@ -7556,7 +7556,7 @@
 
           // Animate to the value specified
           .end()
-          .animate({opacity: to}, speed, easing, callback)
+          .animate({ opacity: to }, speed, easing, callback)
       );
     },
     animate: function (prop, speed, easing, callback) {
@@ -7684,9 +7684,9 @@
       slideDown: genFx("show"),
       slideUp: genFx("hide"),
       slideToggle: genFx("toggle"),
-      fadeIn: {opacity: "show"},
-      fadeOut: {opacity: "hide"},
-      fadeToggle: {opacity: "toggle"},
+      fadeIn: { opacity: "show" },
+      fadeOut: { opacity: "hide" },
+      fadeToggle: { opacity: "toggle" },
     },
     function (name, props) {
       jQuery.fn[name] = function (speed, easing, callback) {
@@ -8555,7 +8555,7 @@
   // which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
   // Related ticket - https://bugs.chromium.org/p/chromium/issues/detail?id=449857
   if (!support.focusin) {
-    jQuery.each({focus: "focusin", blur: "focusout"}, function (orig, fix) {
+    jQuery.each({ focus: "focusin", blur: "focusout" }, function (orig, fix) {
       // Attach a single capturing handler on the document while someone wants focusin/focusout
       var handler = function (event) {
         jQuery.event.simulate(fix, event.target, jQuery.event.fix(event));
@@ -8589,7 +8589,7 @@
   }
   var location = window.location;
 
-  var nonce = {guid: Date.now()};
+  var nonce = { guid: Date.now() };
 
   var rquery = /\?/;
 
@@ -8717,11 +8717,11 @@
 
           if (Array.isArray(val)) {
             return jQuery.map(val, function (val) {
-              return {name: elem.name, value: val.replace(rCRLF, "\r\n")};
+              return { name: elem.name, value: val.replace(rCRLF, "\r\n") };
             });
           }
 
-          return {name: elem.name, value: val.replace(rCRLF, "\r\n")};
+          return { name: elem.name, value: val.replace(rCRLF, "\r\n") };
         })
         .get();
     },
@@ -8982,7 +8982,7 @@
       }
     }
 
-    return {state: "success", data: response};
+    return { state: "success", data: response };
   }
 
   jQuery.extend({
@@ -9727,8 +9727,8 @@
                     // IE9 has no XHR2 but throws on binary (trac-11426)
                     // For XHR2 non-text, let the caller handle it (gh-2498)
                     (xhr.responseType || "text") !== "text" || typeof xhr.responseText !== "string"
-                      ? {binary: xhr.response}
-                      : {text: xhr.responseText},
+                      ? { binary: xhr.response }
+                      : { text: xhr.responseText },
                     xhr.getAllResponseHeaders(),
                   );
                 }
@@ -9827,7 +9827,7 @@
         send: function (_, complete) {
           script = jQuery("<script>")
             .attr(s.scriptAttrs || {})
-            .prop({charset: s.scriptCharset, src: s.url})
+            .prop({ charset: s.scriptCharset, src: s.url })
             .on(
               "load error",
               (callback = function (evt) {
@@ -10155,7 +10155,7 @@
       // Running getBoundingClientRect on a
       // disconnected node in IE throws an error
       if (!elem.getClientRects().length) {
-        return {top: 0, left: 0};
+        return { top: 0, left: 0 };
       }
 
       // Get document-relative position by adding viewport scroll to viewport-relative gBCR
@@ -10178,7 +10178,7 @@
         offset,
         doc,
         elem = this[0],
-        parentOffset = {top: 0, left: 0};
+        parentOffset = { top: 0, left: 0 };
 
       // position:fixed elements are offset from the viewport, which itself always has zero offset
       if (jQuery.css(elem, "position") === "fixed") {
@@ -10237,7 +10237,7 @@
   });
 
   // Create scrollLeft and scrollTop methods
-  jQuery.each({scrollLeft: "pageXOffset", scrollTop: "pageYOffset"}, function (method, prop) {
+  jQuery.each({ scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function (method, prop) {
     var top = "pageYOffset" === prop;
 
     jQuery.fn[method] = function (val) {
@@ -10287,7 +10287,7 @@
   });
 
   // Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
-  jQuery.each({Height: "height", Width: "width"}, function (name, type) {
+  jQuery.each({ Height: "height", Width: "width" }, function (name, type) {
     jQuery.each(
       {
         padding: "inner" + name,
